@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { createContext, useEffect, useState } from 'react'
 export const userDataContext=createContext()
 function UserContext({children}) {
-    const serverUrl = import.meta.env.VITE_SERVER_URL || "http://localhost:5000"
+    const serverUrl = "https://backend-4iyi.onrender.com"
     const [userData,setUserData]=useState(null)
     const [frontendImage,setFrontendImage]=useState(null)
      const [backendImage,setBackendImage]=useState(null)
