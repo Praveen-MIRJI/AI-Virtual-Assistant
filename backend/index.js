@@ -14,7 +14,6 @@ const app=express()
 // CORS configuration for both development and production
 const allowedOrigins = [
     "https://frontend-0p63.onrender.com",  // Development frontend
-    "https://frontend-0p63.onrender.com",  // Alternative development port
     process.env.FRONTEND_URL  // Production frontend URL
 ].filter(Boolean); // Remove undefined values
 
